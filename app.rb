@@ -34,13 +34,17 @@ class App < Sinatra::Base
 
     if @operation == "add"
       @result = @num1 + @num2
+      "#{@result}"
     elsif @operation == "subtract"
       @result = @num1 - @num2
+      "#{@result}"
     elsif @operation == "multiply"
       @result = @num1 * @num2
+      "#{@result}"
     elsif @operation == "divide"
       @result = @num1 / @num2
+      "#{@result}"
     end
   end
-  "#{@result}"
+  
 end
